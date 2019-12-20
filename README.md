@@ -10,4 +10,5 @@ Good Problems
         - 607 div1 D
 2. Greedy
     - edu 78 D
-
+3. Some links
+    - Factoring a polynominal function[https://courses.lumenlearning.com/ivytech-collegealgebra/chapter/find-zeros-of-a-polynomial-function/]
