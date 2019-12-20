@@ -1,22 +1,22 @@
 Good Problems
 
-### Math
+0. Math
 
-- Statistics
+    - Statistics
 
-    - edu 78 E
+        - edu 78 E
 
-### DP
+1. DP
 
-- Expection / Probabilities DP
+    - Expection / Probabilities DP
 
-    - 604 div2 D
+        - 604 div2 D
 
-- Tree DP
+    - Tree DP
 
-    - 607 div1 D
+        - 607 div1 D
 
-### Greedy
+2. Greedy
 
     - edu 78 D
 
