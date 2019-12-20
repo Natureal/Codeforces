@@ -4,7 +4,7 @@ Good Problems
 
     - Statistics
 
-        - edu 78 E
+        - edu 78 E (Solve E(x^k))
 
 1. DP
 
