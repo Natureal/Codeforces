@@ -1,12 +1,12 @@
 Good Problems
 
-0. Math
+### Math
 
 - Statistics
 
     - edu 78 E
 
-1. DP
+### DP
 
 - Expection / Probabilities DP
 
@@ -16,7 +16,7 @@ Good Problems
 
     - 607 div1 D
 
-2. Greedy
+### Greedy
 
     - edu 78 D
 
