@@ -11,4 +11,6 @@ Good Problems
 2. Greedy
     - edu 78 D
 3. Some links
+    - [Brilliant: Learning Math](https://brilliant.org/daily-problems/)
+    - [Rational Root Theorem](https://brilliant.org/wiki/rational-root-theorem/)
     - [Factoring a polynominal function](https://courses.lumenlearning.com/ivytech-collegealgebra/chapter/find-zeros-of-a-polynomial-function/)
