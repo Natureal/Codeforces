@@ -11,4 +11,4 @@ Good Problems
 2. Greedy
     - edu 78 D
 3. Some links
-    - Factoring a polynominal function[https://courses.lumenlearning.com/ivytech-collegealgebra/chapter/find-zeros-of-a-polynomial-function/]
+    - [Factoring a polynominal function](https://courses.lumenlearning.com/ivytech-collegealgebra/chapter/find-zeros-of-a-polynomial-function/)
