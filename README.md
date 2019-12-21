@@ -2,7 +2,7 @@ Good Problems
 
 0. Math
     - Statistics
-        - edu 78 E (Solve E(x^k))
+        - edu 78 F (K-moment of binomial)
 1. DP
     - Expection / Probabilities DP
         - 604 div2 D
