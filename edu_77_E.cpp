@@ -1,4 +1,4 @@
-// DP, exponen
+// DP, exponent
 #include <bits/stdc++.h>
 using namespace std;
 
