@@ -13,11 +13,27 @@ using namespace std;
  
 typedef long long ll;
 typedef pair<int,int> pii;
-typedef vector<int> VI;
 const int mod = 1000000007;
 
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	int t;
+    cin >> t;
+    REP(q, 1, t){
+        int a[3];
+        cin >> a[0] >> a[1] >> a[2];
+        sort(a, a + 3);
+        if(a[1] == a[2] || a[1] == a[2] - 1){
+            cout << "Yes" << endl;
+        }
+        else{
+            if(a[0] + a[1] >= a[2] - 1){
+                cout << "Yes" << endl;
+            }
+            else{
+                cout << "No" << endl;
+            }
+        }
+    }
     return 0;
 }

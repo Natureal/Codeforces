@@ -16,8 +16,20 @@ typedef pair<int,int> pii;
 typedef vector<int> VI;
 const int mod = 1000000007;
 
+int t, n;
+
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	cin >> t;
+    REP(q, 1, t){
+        int a, b;
+        cin >> a >> b;
+        int dif = abs(a - b);
+        int v = dif % 5;
+        int ans = dif / 5;
+        if(v == 1 || v == 2) ans++;
+        if(v == 3 || v == 4) ans += 2;
+        cout << ans << endl;
+    }
     return 0;
 }

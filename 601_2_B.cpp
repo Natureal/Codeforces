@@ -16,8 +16,27 @@ typedef pair<int,int> pii;
 typedef vector<int> VI;
 const int mod = 1000000007;
 
+int t, n, m;
+int a[1010];
+
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	cin >> t;
+    REP(q, 1, t){
+        cin >> n >> m;
+        REP(i, 1, n) cin >> a[i];
+        if(m < n || n == 2){
+            cout << -1 << endl;
+        }
+        else{
+            ll sum = 0;
+            REP(i, 1, n) sum += 2LL * a[i];
+            cout << sum << endl;
+            REP(i, 1, n - 1){
+                cout << i << " " << i + 1 << endl;
+            }
+            cout << n << " " << 1 << endl;
+        }
+    }
     return 0;
 }
