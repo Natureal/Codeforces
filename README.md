@@ -1,3 +1,5 @@
+Check (1) forget to sort (2) typo of i and j (3) n = 1 / cout -1
+
 Good Problems
 
 0. Math
