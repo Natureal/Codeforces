@@ -12,15 +12,28 @@ using namespace std;
 #define PB push_back
  
 typedef long long ll;
-typedef long double ld;
 typedef pair<int,int> pii;
-typedef pair<ll, ll> pll;
 typedef vector<int> VI;
-typedef vector<ll> VL;
 const int mod = 1000000007;
+
+int n, m;
+string s[21], t[21];
 
 int main(){
     ios_base::sync_with_stdio(false);
-	
+    cin >> n >> m;
+    REP(i, 0, n - 1){
+        cin >> s[i];
+    }
+    REP(i, 0, m - 1){
+        cin >> t[i];
+    }
+    int q;
+    cin >> q;
+    REP(i, 1, q){
+        int y;
+        cin >> y;
+        cout << s[(y - 1) % n] + t[(y - 1) % m] << endl;
+    }
     return 0;
 }
