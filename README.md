@@ -12,7 +12,14 @@ Good Problems
         - 607 div1 D
 2. Greedy
     - edu 78 D
-3. Some links
+3. Hash
+    - Hello 2020 D
+4. Geometry
+    - Polar sort
+        - Hello 2020 E
+
+
+Some links
     - [Brilliant: Learning Math](https://brilliant.org/daily-problems/)
     - [Rational Root Theorem](https://brilliant.org/wiki/rational-root-theorem/)
     - [Factoring a polynominal function](https://courses.lumenlearning.com/ivytech-collegealgebra/chapter/find-zeros-of-a-polynomial-function/)
