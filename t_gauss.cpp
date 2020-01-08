@@ -1,3 +1,6 @@
+// Remember to define the top, number of column.
+int top = ;
+
 bool Gauss(){
     int i,col;
     for(i = 0,col = 0; col < top; ++i,++col){
