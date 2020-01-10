@@ -14,7 +14,11 @@ Good Problems
     - edu 78 D
 3. Hash
     - Hello 2020 D
-4. Geometry
+4. Graph
+    - Sparse Graph Search
+        - 589 div2 D
+        - 599 div1 B
+5. Geometry
     - Polar sort
         - Hello 2020 E
 
