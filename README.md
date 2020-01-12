@@ -10,6 +10,10 @@ Good Problems
         - 604 div2 D
     - Tree DP
         - 607 div1 D
+    - Submask DP
+        - 568 div2 F
+    - Multi-DP / Seperated DP
+        - 568 div2 G hard
 2. Greedy
     - edu 78 D
 3. Hash
@@ -18,7 +22,10 @@ Good Problems
     - Sparse Graph Search
         - 589 div2 D
         - 599 div1 B
-5. Geometry
+5. Data Structures
+    - Treap / Ordered set
+        - 567 div2 D
+6. Geometry
     - Polar sort
         - Hello 2020 E
 
