@@ -1,15 +1,5 @@
-#pragma GCC optimize("O3")
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
-using namespace __gnu_pbds;
-
-// find_by_order(k): *(s.find_by_order(2), counting from 0)
-// order_of_key(k) returns the number of items strictly smaller than item k.
-template<typename T>
-using ordered_set =  tree<T, null_type, less<T>, rb_tree_tag, 
-        tree_order_statistics_node_update>;
 
 #define REP(i, a, b) for(int i = a; i <= b; ++i)
 #define DEC(i, a, b) for(int i = a; i >= b; --i)
@@ -27,12 +17,31 @@ typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
 typedef vector<int> VI;
 typedef vector<ll> VL;
-typedef vector<pii > VPI;
-typedef vector<pll > VPL;
 const int mod = 1000000007;
+
+int t, n;
+int A[100010];
 
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	cin >> t;
+    REP(q, 1, t){
+        cin >> n;
+        ll sum = 0;
+        REP(i, 1, n){
+            cin >> A[i];
+            sum += A[i];
+        }
+        bool exit = false;
+        ll pre = A[1], tmin = A[1];
+        if(pre >= sum) exit = true;
+        REP(i, 2, n){
+            pre += A[i];
+            if(pre - tmin >= sum) exit = true;
+            if(i < n && pre >= sum) exit = true;
+            tmin = min(tmin, pre);
+        }
+        cout << (exit ? "NO" : "YES") << endl;
+    }
     return 0;
 }
