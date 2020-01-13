@@ -22,6 +22,8 @@ Good Problems
     - Sparse Graph Search
         - 589 div2 D
         - 599 div1 B
+    - Strongly Connected Components
+        - 545 div1 C
 5. Data Structures
     - Treap / Ordered set
         - 567 div2 D
