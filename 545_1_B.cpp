@@ -1,3 +1,4 @@
+// Hash
 #pragma GCC optimize("O3")
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
@@ -33,20 +34,28 @@ const int mod = 1000000007;
 const int maxn = 500010;
 
 struct Hash{
-  ll B,mod,len,Has[maxn],Base[maxn];
-  void init(char *s, ll _len, ll _B, ll _mod){
-    B=_B; mod=_mod; len=_len;
-    Base[0]=1; Has[0]=0; 
-    for (ll i=1;i<=len;i++){
-      Base[i]=Base[i-1]*B%mod;
-      Has[i]=(Has[i-1]*B+s[i-1]+1)%mod;
+    // hash is 1-based index, but the input and output are 0-based index
+    int base[2][maxn], hs[2][maxn], len;
+    int B[2] = {239, 229}, mod[2] = {1000 * 1000 * 1000 + 7, 1000 * 1000 * 1000 + 9};
+    void init(char *s, int L = -1){
+        len = (L == -1) ? strlen(s) : L;
+        base[0][0] = base[1][0] = 1;
+        hs[0][0] = hs[1][0] = 0;
+        REP(i, 1, len) REP(j, 0, 1){
+            base[j][i] = 1LL * base[j][i - 1] * B[j] % mod[j];
+            hs[j][i] = (1LL * hs[j][i - 1] * B[j] % mod[j] + s[i - 1]) % mod[j];
+        }
     }
-    return;
-  }
-  ll gethash(ll l,ll r){
-    return ((Has[r]-Has[l-1]*Base[r-l+1])%mod+mod)%mod;
-  }
-}HS;
+    pii get(int l, int r){ // 0-based index
+        int res[2];
+        REP(i, 0, 1)
+            res[i] = ((hs[i][r + 1] - 1LL * hs[i][l] * base[i][r - l + 1] % mod[i]) % mod[i]
+                        + mod[i]) % mod[i];
+        return MP(res[0], res[1]);
+    }
+};
+
+Hash HS;
 
 char s[500010], t[500010], ans[500010];
 
@@ -59,10 +68,10 @@ int main(){
         num0 += (s[i] == '0');
         num1 += (s[i] == '1');
     }
-    HS.init(t, lent, 239, mod);
+    HS.init(t, lent);
     int suf = 0;
     REP(i, 1, lent - 1){
-        if(HS.gethash(1, lent - i) == HS.gethash(i + 1, lent)){
+        if(HS.get(0, lent - i - 1) == HS.get(i, lent - 1)){
             suf = lent - i;
             break;
         }
