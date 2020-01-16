@@ -24,6 +24,8 @@ Good Problems
         - 599 div1 B
     - Strongly Connected Components
         - 545 div1 C
+    - Minimum Cost Maximum Flow
+        - edu 80 F
 5. Data Structures
     - Treap / Ordered set
         - 567 div2 D
