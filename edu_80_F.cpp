@@ -102,11 +102,13 @@ struct MCMF{
                 int id = pree[i];
                 minf = min(minf,e[id].cp);
             }
-            if(dis[sin] >= 0) break;
+            bool f = false;
+            if(dis[sin] >= 0) f = true;
             for(int i = sin; i != sou; i = prev[i]){
                 int id = pree[i];
                 e[id].cp -= minf;
                 e[id ^ 1].cp += minf;
+                if(f) e[id].id = e[id ^ 1].id = 0;
             }
             sumf += minf;
             min_cost += dis[sin] * minf;
