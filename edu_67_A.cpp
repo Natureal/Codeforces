@@ -22,8 +22,16 @@ typedef vector<pii > VPI;
 typedef vector<pll > VPL;
 const int mod = 1000000007;
 
+int T;
+
+int n, s, t;
+
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	cin >> T;
+    REP(q, 1, T){
+        cin >> n >> s >> t;
+        cout << max(n - s + 1, n - t + 1) << endl;
+    }
     return 0;
 }

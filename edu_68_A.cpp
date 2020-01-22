@@ -24,6 +24,11 @@ const int mod = 1000000007;
 
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	int T, n, x;
+    cin >> T;
+    REP(q, 1, T){
+        cin >> n >> x;
+        cout << x * 2 << endl;
+    }
     return 0;
 }

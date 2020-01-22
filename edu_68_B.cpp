@@ -22,8 +22,31 @@ typedef vector<pii > VPI;
 typedef vector<pll > VPL;
 const int mod = 1000000007;
 
+int q, n, m;
+string s[50010];
+int nr[50010], nc[50010];
+
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	cin >> q;
+    REP(t, 1, q){
+        cin >> n >> m;
+        MEM(nr, 0);
+        MEM(nc, 0);
+        REP(i, 0, n - 1){
+            cin >> s[i];
+            REP(j, 0, m - 1) if(s[i][j] == '.'){
+                nr[i]++;
+                nc[j]++;
+            }
+        }
+        int ans = 1e9;
+        REP(i, 0, n - 1){
+            REP(j, 0, m - 1){
+                ans = min(ans, nr[i] + nc[j] - (s[i][j] == '.'));
+            }
+        }
+        cout << ans << endl;
+    }
     return 0;
 }

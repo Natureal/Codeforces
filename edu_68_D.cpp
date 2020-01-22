@@ -24,6 +24,19 @@ const int mod = 1000000007;
 
 int main(){
     ios_base::sync_with_stdio(false);
-	
+	int T, n, k;
+    cin >> T;
+    while(T--){
+        cin >> n >> k;
+        if(k % 3 != 0){
+            cout << (n % 3 == 0 ? "Bob" : "Alice") << endl;
+            continue;
+        }
+        n %= (k + 1);
+        if(n == k || n % 3 != 0){
+            cout << "Alice" << endl;
+        }
+        else cout << "Bob" << endl;
+    }
     return 0;
 }
