@@ -10,6 +10,8 @@ Good Problems
         - 604 div2 D
     - Tree DP
         - 607 div1 D
+    - Rooted Tree DP
+        - 614 div1 C
     - Submask DP
         - 568 div2 F
     - Multi-DP / Seperated DP
