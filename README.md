@@ -28,10 +28,13 @@ Good Problems
         - 545 div1 C
     - Minimum Cost Maximum Flow
         - edu 80 F
-5. Data Structures
+5. Tree
+    - LCA
+        - 620 div2 E
+6. Data Structures
     - Treap / Ordered set
         - 567 div2 D
-6. Geometry
+7. Geometry
     - Polar sort
         - Hello 2020 E
 
