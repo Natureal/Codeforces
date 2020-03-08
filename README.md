@@ -37,6 +37,8 @@ Good Problems
 7. Geometry
     - Polar sort
         - Hello 2020 E
+8. Randomization
+    - Ozon2020 F
 
 
 - Some links
