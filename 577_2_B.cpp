@@ -22,8 +22,21 @@ typedef vector<pii > VPI;
 typedef vector<pll > VPL;
 const int mod = 1000000007;
 
+int n;
+int a[100010];
+
 int main(){
-    ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
-    
+    ios_base::sync_with_stdio(false);
+	cin >> n;
+    REP(i, 1, n) cin >> a[i];
+    sort(a + 1, a + n + 1);
+    ll sum = 0;
+    REP(i, 1, n) sum += a[i];
+    if(sum % 2 == 0 && a[n] <= sum - a[n]){
+        cout << "YES" << endl;
+    }
+    else{
+        cout << "NO" << endl;
+    }
     return 0;
 }

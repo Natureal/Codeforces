@@ -22,8 +22,31 @@ typedef vector<pii > VPI;
 typedef vector<pll > VPL;
 const int mod = 1000000007;
 
+int t, n;
+
 int main(){
-    ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
-    
+    ios_base::sync_with_stdio(false);
+	cin >> t;
+    REP(q, 1, t){
+        cin >> n;
+        string s;
+        cin >> s;
+        int ans = 1;
+        string ans_str = s;
+        REP(i, 2, n){
+            string tmp = s.substr(i - 1, n - i + 1);
+            string tmp2 = s.substr(0, i - 1);
+            if((n - i + 1) & 1){
+                reverse(tmp2.begin(), tmp2.end());
+            }
+            tmp += tmp2;
+            if(tmp < ans_str){
+                ans_str = tmp;
+                ans = i;
+            }
+        }
+        cout << ans_str << endl;
+        cout << ans << endl;
+    }
     return 0;
 }

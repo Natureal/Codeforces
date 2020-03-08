@@ -22,8 +22,31 @@ typedef vector<pii > VPI;
 typedef vector<pll > VPL;
 const int mod = 1000000007;
 
+int n, m, p;
+int A[1000010], B[1000010];
+
+inline int Read(){
+      int x = 0,f = 1;char ch = getchar();
+      while(ch < '0' || ch > '9'){if(ch == '-')f = -1;ch = getchar();}
+      while(ch >= '0' && ch <= '9'){x = x * 10 + ch - '0';ch = getchar();}
+      return x * f;
+}
+
 int main(){
-    ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
-    
+    n = Read();
+    m = Read();
+    p = Read();
+    REP(i, 1, n) A[i] = Read();
+    REP(i, 1, m) B[i] = Read();
+    int a, b;
+    REP(i, 1, n) if(A[i] % p){
+        a = i;
+        break;
+    }
+    REP(i, 1, m) if(B[i] % p){
+        b = i;
+        break;
+    }
+    cout << a + b - 2 << endl;
     return 0;
 }

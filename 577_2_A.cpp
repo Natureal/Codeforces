@@ -22,8 +22,27 @@ typedef vector<pii > VPI;
 typedef vector<pll > VPL;
 const int mod = 1000000007;
 
+int n, m;
+string s[1010];
+int num[1010][5];
+int a[1010];
+
 int main(){
-    ios_base::sync_with_stdio(false), cin.tie(0), cout.tie(0);
-    
+    ios_base::sync_with_stdio(false);
+    cin >> n >> m;
+    REP(i, 1, n){
+        cin >> s[i];
+        REP(j, 0, m - 1) num[j][s[i][j] - 'A'] += 1;
+    }
+    REP(i, 1, m) cin >> a[i];
+    ll ans = 0;
+    REP(i, 0, m - 1){
+        int tmax = 0;
+        REP(j, 0, 4){
+            tmax = max(tmax, num[i][j] * a[i + 1]);
+        }
+        ans += tmax;
+    }
+    cout << ans << endl;
     return 0;
 }
