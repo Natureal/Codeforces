@@ -38,7 +38,9 @@ Good Problems
     - Polar sort
         - Hello 2020 E
 8. Randomization
-    - Ozon2020 F
+    - Ozon2020 
+9. Games
+    - edu 83 F
 
 
 - Some links
