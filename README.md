@@ -51,3 +51,4 @@ Good Problems
     - [Rational Root Theorem](https://brilliant.org/wiki/rational-root-theorem/)
     - [Factoring a polynominal function](https://courses.lumenlearning.com/ivytech-collegealgebra/chapter/find-zeros-of-a-polynomial-function/)
     - [The moment generating function](https://mathcs.clarku.edu/~djoyce/ma217/moment.pdf)
+    - [Z Function](https://codeforces.com/blog/entry/3107)
