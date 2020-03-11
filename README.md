@@ -41,6 +41,9 @@ Good Problems
     - Ozon2020 
 9. Games
     - edu 83 F
+10. Strings
+    - Z Function
+        - 622 div2 E
 
 
 - Some links
