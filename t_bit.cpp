@@ -6,9 +6,9 @@ struct BIT{
     T c[maxn];
     BIT(){ clear(); }
     inline void clear(){ memset(c, 0, sizeof(c)); }
-    inline T lowbit(T &x){ return x & (-x); }
+    inline int lowbit(int x){ return x & (-x); }
     inline void add(int x, T d){
-        while(x <= maxn){
+        while(x < maxn){
             c[x] += d;
             x += lowbit(x);
         }
