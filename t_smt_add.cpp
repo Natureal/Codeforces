@@ -34,7 +34,7 @@ struct SMT{
         }
         int mid = getmid(l, r);
         push_down(p);
-        T res = 0;
+        T res = 0; // should be -INF
         if(a <= mid) res = max(res, query(a, b, p << 1, l, mid));
         if(b > mid)  res = max(res, query(a, b, p << 1|1, mid + 1, r));
         return res;
